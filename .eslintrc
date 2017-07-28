@@ -1,0 +1,43 @@
+{
+  "parser": "babel-eslint",
+  # 使用 AirBnb 编码规范
+  "extends": "airbnb",
+  "plugins": [
+    # "prefer-object-spread"
+  ],
+  "rules": {
+    #禁止调用 console 对象的方法
+    "no-console": 0,
+    #建议使用模板而非字符串连接
+    #"prefer-template": 0,
+    #要求所有调用 require() 必须在模块顶部
+    "global-require": 0,
+    "one-var": 0,
+    "one-var-declaration-per-line": 0,
+    "object-shorthand": 0,
+    "no-unused-expressions": 0,
+    "no-nested-ternary": 0,
+    "no-underscore-dangle": 0,
+    #强制在对象和数组字面量中使用一致的拖尾逗号
+    "comma-dangle": ["error", "never"],
+    #当使用一个还未声明的标示符是会报警告。
+    "no-use-before-define": 0,
+    "no-unneeded-ternary": 0,
+    "no-mixed-operators": 0,
+    "class-methods-use-this": 0,
+    # "prefer-object-spread/prefer-object-spread": 2,
+    "prefer-const": ["error", {"destructuring": "all"}],
+    "react/prefer-stateless-function": 0,
+    # 允许在 JS 文件中使用 JSX
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-boolean-value": 0,
+    "react/no-array-index-key": 0,
+    # 不进行react的prop类型限制
+    "react/prop-types": 0,
+    "react/sort-comp": 0,
+    "import/extensions": 0,
+    #引用未在 package.json 中写入依赖的包
+    #"import/no-extraneous-dependencies": 0,
+    "max-len": 0,
+  },
+}
