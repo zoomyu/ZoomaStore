@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Dimensions,
   Animated,
@@ -6,13 +6,13 @@ import {
   Text,
   Image,
   StatusBar
-} from "react-native";
+} from 'react-native';
 
-import Colors from "../constants/Colors";
+import Colors from '../constants/Colors';
 
-const maxHeight = Dimensions.get("window").height;
-const maxWidth = Dimensions.get("window").width;
-const splashImg = require("../imgs/logo_yzwh.png");
+const maxHeight = Dimensions.get('window').height;
+const maxWidth = Dimensions.get('window').width;
+const splashImg = require('../imgs/logo_yzwh.png');
 
 export default class Splash extends React.Component {
   static navigationOptions = {
@@ -42,8 +42,8 @@ export default class Splash extends React.Component {
             width: maxWidth,
             height: maxHeight,
             backgroundColor: Colors.sColor,
-            justifyContent: "center",
-            alignItems: "center",
+            justifyContent: 'center',
+            alignItems: 'center',
             transform: [{ scale: this.state.bounceValue }]
           }}
         >
@@ -54,10 +54,10 @@ export default class Splash extends React.Component {
         </Animated.View>
         <Text
           style={{
-            position: "absolute",
+            position: 'absolute',
             bottom: 16,
             width: maxWidth,
-            textAlign: "center",
+            textAlign: 'center',
             fontSize: 14,
             color: Colors.sTitleColor
           }}
