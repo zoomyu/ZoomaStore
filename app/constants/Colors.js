@@ -1,14 +1,22 @@
 // general
-const BLACK = '#000000';
-const WHITE = '#ffffff';
+const black = '#000000';
+const white = '#ffffff';
+const primary = '#ff5722';
+const gray = '#616161';
+const primaryDark = '#e64a19';
+const accent = '#FF4081';
 
 module.exports = {
   transparent: 'transparent',
   // header
-  hColor: WHITE,
-  hTitleColor: BLACK,
+  hColor: white,
+  hTitleColor: black,
   // Splash
   sColor: '#2D2D2D',
   sImageColor: '#CA0101',
-  sTitleColor: '#9D9D9D'
+  sTitleColor: '#9D9D9D',
+  // tabBar
+  activeTabColor: primary, // tabBar color when active
+  inactiveTabColor: gray, // tabBar color when inactive
+  tabColor: white
 };

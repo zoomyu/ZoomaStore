@@ -8,6 +8,8 @@ import {
   StatusBar
 } from 'react-native';
 
+import { NavigationActions } from 'react-navigation';
+
 import Colors from '../constants/Colors';
 
 const maxHeight = Dimensions.get('window').height;
@@ -27,11 +29,25 @@ export default class Splash extends React.Component {
   }
 
   componentDidMount() {
+    const resetAction = NavigationActions.reset({
+      index: 0,
+      actions: [
+        NavigationActions.navigate({ routeName: 'Main' })
+      ]
+    });
     Animated.timing(this.state.bounceValue, {
       toValue: 1.8,
       duration: 1200
     }).start();
+    this.timer = setTimeout(() => {
+      this.props.navigation.dispatch(resetAction);
+    }, 1000);
   }
+
+  componentWillUnmount() {
+    clearTimeout(this.timer);
+  }
+
 
   render() {
     return (
