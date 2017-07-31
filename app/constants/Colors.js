@@ -8,6 +8,14 @@ const accent = '#FF4081';
 
 module.exports = {
   transparent: 'transparent',
+  primaryDark: primaryDark,
+  primary: primary,
+  background: white,
+  mainBackground: '#E9E9EF',
+  lightWhite: 'rgba(255,255,255,0.7)',
+  white: '#ffffff',
+  gray: '#ccc',
+  icon: '#9D9D9D',
   // header
   hColor: white,
   hTitleColor: black,
